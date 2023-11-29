@@ -10,5 +10,7 @@ int main()
     //Declaring a variable to get number of gallons
     float gal;
     cout<<"Enter the total number of gallons: \a"; 
+    cin>>gal;
+    cout<<"Cubic feet equivalent of the galons entered: "<<gal/cub_foot;
     return 0;
 }
