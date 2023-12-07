@@ -24,7 +24,11 @@ int main()
         }
     }
     //loop to print out the merged array
-    for 
+    cout<<"Mergeed array: \n";
+    for (int i=0;i<(size1+size2);i++)
+    {
+        cout<<merge_arr[i]<<endl;
+    }
     getch();
     return 0;
 }
