@@ -2,6 +2,12 @@
 using namespace std;
 int main()
 {
-    int arr[4] = {12,3,13,22};
-    for
+    int size =5;//Size of the array
+    int arr[size] = {0};
+    //using loop to input the values in arrays
+    for(int x=0;x<=3;x++)
+    {
+        
+    }
+    for(int i =0;i<=3;i++)
 }
