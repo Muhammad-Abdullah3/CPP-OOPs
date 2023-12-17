@@ -10,5 +10,8 @@ int main()
     st1.append(st2);
     cout<<"st1 after appending:"<<st1<<endl;
     cout<<"st2 after appending:"<<st2<<endl;
+    //Using + operator
+    //"Appending st3 and st4 and displaying the output without storing in a variable:"
+    cout<<st3+st4;
     return 0;
 }
