@@ -1,0 +1,2 @@
+/*Write a program that inputs a number in main function and passes the number to a function. 
+The function displays table of that number*/
