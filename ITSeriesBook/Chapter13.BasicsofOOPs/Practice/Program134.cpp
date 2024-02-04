@@ -24,6 +24,15 @@ class Book
     }
     void show()
     {
-        cout<<
+        cout<<"Book Id:"<<bookId<<endl;
+        cout<<"Book Pages:"<<pages<<endl;
+        cout<<"Book Price:"<<price<<endl;
     }
+    void set(int id,int pg,float pr)
+    {
+        bookId = id;
+        pages = pg;
+        price = pr;
+    }
+    
 };
