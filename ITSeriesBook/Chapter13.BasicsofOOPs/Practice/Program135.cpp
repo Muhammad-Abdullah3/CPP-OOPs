@@ -19,7 +19,7 @@ class Result
     {
         cout<<"Enter the name of student:";
         getline(cin,name);
-        cout<<"Enter the roll number:"
+        cout<<"Enter the roll number:";
         cin>>rNo;
         cout<<"Enter the marks for the student:";
         for(int i=0;i<3;i++)
@@ -41,11 +41,16 @@ class Result
     }
     float avg()
     {
+        int tot = total();
         return (tot/3);
     }
 };
 int main()
 {
-    
+    Result st1;
+    st1.input();
+    st1.show();
+    cout<<"Total marks: "<<st1.total()<<endl;
+    cout<<"Average: "<<st1.avg();
     return 0;
 }
