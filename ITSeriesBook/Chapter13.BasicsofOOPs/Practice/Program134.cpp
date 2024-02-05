@@ -13,7 +13,7 @@ using namespace std;
 class Book
 {
     private:
-    int bookId, pages
+    int bookId, pages;
     float price;
     public:
     void get()
@@ -34,5 +34,23 @@ class Book
         pages = pg;
         price = pr;
     }
-    
+    float getPrice()
+    {
+        return price;
+    }
 };
+int main()
+{
+    Book b1;
+    b1.get();
+    b1.set(01,566,870.65);
+    Book b2;
+    b2.get();
+    b2.set(10,438,180.70);
+    cout<<"Most Costly book:";
+    if(b1.getPrice()<b2.getPrice())
+        b2.show();
+    else
+        b1.show();
+    return 0;
+}
