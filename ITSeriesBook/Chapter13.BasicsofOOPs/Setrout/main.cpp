@@ -6,12 +6,14 @@ class User
 {
     private:
     string name;
-    string Date;
+    string date;
     public:
     void input()
     {
         cout<<"Enter your name:";
-        cin>>
+        getline(cin,name);
+        cout<<"Enter Date:";
+        getline(cin,date);
     }
 };
 int main()
