@@ -3,14 +3,14 @@ using namespace std;
 long totNode(int,int,int,int,int,int,int);
 int main()
 {
-    long total = totNode(0,0,1,2,0,0,1);
+    long total = totNode(0,0,2,2,0,0,3);
     cout<<"Total Nodes: "<<total; 
     return 0;
 }
 long totNode(int x1,int y1,int x2,int y2,int xl,int yl,int r)
 {
     int xCount,yCount,xBound,yBound;
-    long nodes;
+    long nodes=0;
     if(x1>x2)
     {
         xCount = x2;
@@ -20,21 +20,21 @@ long totNode(int x1,int y1,int x2,int y2,int xl,int yl,int r)
     {
         xCount = x1;
         xBound = x2;
-    }
-    // Block for Y coordinate counter variable
-    if(y1>y2)
-    {
-        yCount = y2;
-        yBound = y1;
-    }
-    else
-    {
-        yCount = y1;
-        yBound = y2;
-    }
+    }    
     //Start of nested loop
     while(xCount<=xBound)
     {
+        // Block for Y coordinate counter variable
+        if(y1>y2)
+        {
+            yCount = y2;
+            yBound = y1;
+        }
+        else
+        {
+            yCount = y1;
+            yBound = y2;
+        }
         while(yCount<=yBound)
         {
             if(((xl+r)>=xCount||(xl-r)<=xCount)&&((yl+r)>=yCount||(yl-r)<=yCount))
